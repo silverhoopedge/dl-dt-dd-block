@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/combo",
+  "version": "0.1.0",
+  "title": "Combo",
+  "category": "design",
+  "icon": "sos",
+  "parent": [
+    "create-block/butterfly"
+  ],
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "combo",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "contently": {
+      "type": "string"
+    }
+  }
+}
