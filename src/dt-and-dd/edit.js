@@ -30,23 +30,27 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
- export default function Edit({ attributes: { content }, setAttributes }) {
-	
-	function 
-	editContentHandler(newVal) {
-		setAttributes({ content: newVal });
-	}
+ export default function Edit({ attributes: { content_dt, content_dd }, setAttributes }) {
+
+
 
 		 return (
-			 
+			<div {...useBlockProps()}>
 				 <RichText
-					 { ...useBlockProps() }
-					 value={content}
-					 onChange={editContentHandler}
+					 value={content_dt}
+					 onChange={(newContent_dt) => setAttributes({ content_dt: newContent_dt })}
+					 tagName='dt'
+					 placeholder='Enter term here.'
+					 allowedFormats={[]}
+					 					  />
+					 <RichText
+					 value={content_dd}
+					 onChange={(newContent_dd) => setAttributes({ content_dd: newContent_dd })}
 					 tagName='dd'
-					 placeholder='Enter term name here.'
-					  />
-				
+					 placeholder='Enter description here.'
+					 allowedFormats={['core/bold']}
+					  /> 
+			</div>	
 		 );
 	 }
 	

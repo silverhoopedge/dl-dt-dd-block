@@ -54,7 +54,7 @@ __webpack_require__.r(__webpack_exports__);
 function Edit() {
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("dl", blockProps, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
-    allowedBlocks: ['create-block/combo']
+    allowedBlocks: ['create-block/dt-and-dd', 'create-block/dt-and-dd-dynamic']
   }));
 }
 
@@ -223,7 +223,7 @@ module.exports = window["wp"]["i18n"];
   \***************************************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/butterfly","version":"0.1.0","title":"Description List","category":"design","icon":"heart","description":"Example block scaffolded with Create Block tool.","supports":{"html":false},"textdomain":"butterfly","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/description-list-container","version":"0.1.0","title":"Description List Container","category":"design","icon":"heart","description":"description list wrapper.","supports":{"html":false,"color":{"text":false,"link":false,"background":true},"spacing":{"margin":true,"padding":true,"blockGap":true}},"textdomain":"dl-dt-dd-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

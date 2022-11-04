@@ -7,9 +7,9 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-create-block-butterfly {
-  background-color: pink;
-  color: black;
+.wp-block-create-block-description-list-container {
+  background-color: #f6f6f6;
+  color: white;
   padding: 20px;
 }
 

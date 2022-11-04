@@ -15,14 +15,18 @@ import { useBlockProps,RichText } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
- export default function save( { attributes: { content } } ) {
+ export default function save( { attributes: { content_dt,content_dd } } ) {
     return (
       
+        <div { ...useBlockProps.save() }>
         <RichText.Content
-        {...useBlockProps.save()}
-        tagName="dd"
-        value={content} 
+        tagName="dt"
+        value={content_dt} 
         />
-      
+        <RichText.Content
+        tagName="dd"
+        value={content_dd} 
+        />
+       </div>
     );
 }

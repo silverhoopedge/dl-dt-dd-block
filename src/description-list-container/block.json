@@ -1,16 +1,26 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/butterfly",
+	"name": "create-block/description-list-container",
 	"version": "0.1.0",
-	"title": "Description List",
+	"title": "Description List Container",
 	"category": "design",
 	"icon": "heart",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "description list wrapper.",
 	"supports": {
-		"html": false
+		"html": false,
+		"color": {
+			"text":false,
+			"link":false,
+			"background": true
+		},
+		"spacing": {
+			"margin": true,             
+			"padding": true,                          
+			"blockGap": true  
+		}
 	},
-	"textdomain": "butterfly",
+	"textdomain": "dl-dt-dd-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"

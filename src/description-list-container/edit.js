@@ -35,7 +35,7 @@ export default function Edit() {
 		return (
 			<dl { ...blockProps }>
 				<InnerBlocks 
-				allowedBlocks={['create-block/combo']}
+				allowedBlocks={['create-block/dt-and-dd','create-block/dt-and-dd-dynamic']}
 				/>
 			</dl>
 		);
